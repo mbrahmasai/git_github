@@ -9,4 +9,32 @@ Issues & PRs
 
 step 1 : initilization 
 ==========================
-git 
+git init  
+git add . 
+git status
+git commit - m "first commit" 
+git branch -M main 
+git remote add origin https://github.com/mbrahmasai/git_github.git
+git push -u origin main
+
+
+git add (working directory to staging area)
+==============================================
+| Command              | Description                                                                                      |
+| -------------------- | ------------------------------------------------------------------------------------------------ |
+| `git add .`          | Adds **all changes** (new, modified, deleted files) in the current directory and subdirectories. |
+| `git add -A`         | Adds **all changes**, like `.` but also includes deleted files more explicitly.                  |
+| `git add *`          | Adds all **untracked** and **modified files** in the current directory **(not subfolders)**.     |
+| `git add index.html` | Stages a **specific file**.                                                                      |
+| `git add folder/`    | Stages **all files inside a folder**.                                                           |
+
+git status
+========================================
+The git status command shows the state of the working directory and staging area.
+
+| Section                                   | Description                                                   |
+| ----------------------------------------- | ------------------------------------------------------------- |
+| 🔴 `Changes not staged for commit`        | Modified files that need to be added with `git add`.          |
+| 🟢 `Changes to be committed`              | Files that have been staged with `git add`, ready for commit. |
+| ⚪ `Untracked files`                       | New files not yet tracked by Git. Add them with `git add`.    |
+| ✅ `Nothing to commit, working tree clean` | All changes are committed, nothing new.                       |
