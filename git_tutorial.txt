@@ -1,0 +1,12 @@
+topics 
+-------------
+vcs & git repo 
+staging area & commits
+Branches
+Issues & PRs
+=====================
+
+
+step 1 : initilization 
+==========================
+git 
